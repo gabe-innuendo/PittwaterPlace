@@ -18,3 +18,28 @@
 /* Fonts */
 /* Colours */
 /* Theme specific variables */
+/* 
+	2. Site-wide styles
+*/
+/*Typography*/
+body {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #252525;
+}
+
+h1, h2, h3 {
+  font-family: "Baskerville", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2em;
+}
+
+h4, h5, h6, p {
+  font-family: "Gotham", sans-serif;
+  line-height: 1.4em;
+}

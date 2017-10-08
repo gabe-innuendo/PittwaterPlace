@@ -30,3 +30,31 @@ $blue: #4b92cb;
 $image-border: solid 10px $black;
 $gradient-bottom: linear-gradient(rgba(37,38,38,0), rgba(37,38,38,0.5));
 $gradient-top: linear-gradient(rgba(37,38,38,0.5), rgba(37,38,38,0));
+
+/* 
+	2. Site-wide styles
+*/
+
+/*Typography*/
+
+body {
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	margin-bottom: 1rem;
+	color: $black;
+}
+
+h1, h2, h3 {
+	font-family: $heading-stack;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+}
+
+h4, h5, h6, p {
+	font-family: $body-stack;
+	line-height: 1.4em; 
+}
