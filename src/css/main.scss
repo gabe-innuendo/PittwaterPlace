@@ -221,7 +221,7 @@ a {
 
 /* Hamburger Menu */
 #hamburger-menu {
-	width: 30px;
+	width: 26px;
 	height: 25px;
 	position: relative;
 	right: 0;
@@ -275,5 +275,68 @@ a {
 /* Main Navigation */
 .main-navigation {
 	position: absolute;
-	display: none; /*TEMP*/
+	top: 57px;
+	left: 0;
+	min-height: 100%;
+	min-height: 100vh;
+	background-color: $black;
+	width: 100%;
+	border: 1px solid $dark-black;
+	border-left: none;
+	border-right: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.15s ease-in-out all;
+
+	ul {
+		padding: 2rem 0 0 0;
+		margin: 0;
+	}
+
+	ul li {
+		width: 100%;
+		text-align: center;
+		
+		a{
+			font-size: 1.2em;
+			font-weight: 700;
+			color: white;
+			width: 100%;
+			display: inline-block;
+			padding: 0.75rem 0;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.inline-icon {
+			padding-left: 0.5rem;
+		}
+
+		ul {
+			padding-top: 0;
+			max-height: 0;
+			visibility: hidden;
+			background-color: $off-white;
+			transition: all 0.3s ease-in-out;
+
+			li {
+
+				a {
+					color: $black;
+					font-weight: 300;
+
+				}
+			}
+		}
+
+		ul.active {
+			visibility: visible;
+			max-height: 10rem;
+		}
+	}
+}
+
+.main-navigation.active {
+	visibility: visible;
+	opacity: 1;
 }
