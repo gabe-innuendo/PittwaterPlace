@@ -23,23 +23,96 @@
 */
 /*Typography*/
 body {
-  font-size: 16px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, a, span {
   margin: 0;
-  margin-bottom: 1rem;
   color: #252525;
 }
 
 h1, h2, h3 {
-  font-family: "Baskerville", serif;
+  font-family: "Baskerville", "Libre Baskerville", serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  line-height: 1.2em;
+  margin-bottom: 1rem;
+  line-height: 1em;
 }
 
-h4, h5, h6, p {
-  font-family: "Gotham", sans-serif;
-  line-height: 1.4em;
+h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3em;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+h5 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+h6 {
+  color: #a5a8aa;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Buttons and Links */
+button, .link-button {
+  -webkit-appearance: none;
+  background-color: #252525;
+  border: 5px solid #252525;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.15s ease-in-out all;
+  transition: 0.15s ease-in-out all;
+}
+
+button:hover, .link-button:hover {
+  background-color: white;
+  color: #252525;
+}
+
+a {
+  font-weight: 500;
+  -webkit-transition: 0.15s ease-in-out color;
+  transition: 0.15s ease-in-out color;
+}
+
+a:hover {
+  color: #4b92cb;
 }
