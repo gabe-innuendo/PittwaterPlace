@@ -12,6 +12,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Montserrat:200,200i,400,400i,700,700i" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/flex-grid.min.css">
@@ -25,15 +26,62 @@
         <!-- Main Header -->
         <header class="main-header">
             <div class="flexGridRow">
-                <div class="cell">
+                <div class="cell cell--oneQuarter">
+                    <div class="clock-icon">
+                        <span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                    </div>
+                    <aside class="trading-hours-popup">
+                        <article class="trading-hours-copy">
+                            <div class="close">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                            <h3>Trading hours</h3>
+                            <table class="opening-times-table">
+                                <tr>
+                                    <td>Monday </td>
+                                    <td>10:00am - 7:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday </td>
+                                    <td>10:00am - 7:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday </td>
+                                    <td>10:00am - 7:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday </td>
+                                    <td>10:00am - 7:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday </td>
+                                    <td>10:00am - 7:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday </td>
+                                    <td>10:00am - 7:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday </td>
+                                    <td>10:00am - 7:00pm</td>
+                                </tr>
+
+                            </table>
+                            <p>For more detailed trading hours please visit our <a href="">store directory.</a></p>
+                        </article>
+                    </aside>
                 </div>
-                <div class="cell">
+                <div class="cell cell--half">
                     <div class="logo-container">
                         <img src="images/logos/logo-white.svg" alt="Pittwater Place Logo" />
                     </div>
                 </div>
-                <div class="cell">
-                    <div class="hamburger-menu">
+                <div class="cell cell--oneQuarter">
+                    <div id="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                     <nav class="main-navigation">
                         <ul>

@@ -18,13 +18,16 @@
 */
 
 /* Fonts */
-$heading-stack: "Baskerville", serif;
-$body-stack: "Gotham", sans-serif;
+$heading-stack: 'Baskerville', 'Libre Baskerville', serif;
+$body-stack: 'Montserrat', sans-serif;
 
 /* Colours */
 $black: #252525;
+$dark-black: #141515;
 $off-white: #f1f2f2;
 $blue: #4b92cb;
+$grey: #a5a8aa;
+$red: #bf1c31;
 
 /* Theme specific variables */
 $image-border: solid 10px $black;
@@ -38,12 +41,14 @@ $gradient-top: linear-gradient(rgba(37,38,38,0.5), rgba(37,38,38,0));
 /*Typography*/
 
 body {
-	font-size: 16px;
+	font-size: 14px;
+	font-family: $body-stack;
+	font-weight: 300;
+	color: $black;
 }
 
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
-	margin-bottom: 1rem;
 	color: $black;
 }
 
@@ -51,10 +56,224 @@ h1, h2, h3 {
 	font-family: $heading-stack;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	line-height: 1.2em;
+	margin-bottom: 1rem;
+	line-height: 1em;
+	font-weight: bold;
 }
 
-h4, h5, h6, p {
+h4, h5, h6 {
 	font-family: $body-stack;
-	line-height: 1.4em; 
+	font-weight: bold;
+	line-height: 1.3em; 
+	margin-bottom: 0.5rem;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.3em;
+}
+
+h5 /* Paragraph subtitles */{
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1rem;
+}
+
+h6 /* Subtitles and dates */ {
+	color: $grey;
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.8em;
+}
+
+p {
+	font-weight: 300;
+	line-height: 1.4rem;
+	margin-bottom: 1rem;
+}
+
+/* Buttons and Links */
+
+button, .link-button {
+	-webkit-appearance: none;
+	background-color: $black;
+	border: 5px solid $black;
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	font-family: $body-stack;
+	font-weight: 500;
+	letter-spacing: 1px;
+	padding: 0.25rem 0.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.15s ease-in-out all;
+
+	&:hover {
+		background-color: white;
+		color: $black;
+	}
+}
+
+a {
+	font-weight: 500;
+	transition: 0.15s ease-in-out color;
+	color: inherit;
+
+	&:hover {
+		color: $blue;
+	}
+}
+
+/* 
+	3. Header / Navigation styles
+*/
+
+/* Mobile header */
+.main-header {
+	background-color: $black;
+	padding: 1rem;
+	max-height: 57px;
+}
+
+/* Trading hours */
+.clock-icon i {
+	color: white;
+	font-size: 1.6em;
+	vertical-align: middle;
+	line-height: 1em;
+}
+
+.trading-hours-popup {
+	position: absolute;
+	top: 57px;
+	left: -440px;
+	max-width: 100%;
+	width: 440px;
+	color: white;
+	background-color: $black;
+	border: 1px solid $dark-black;
+	border-left: none;
+	border-right: none;
+	transition: left 0.3s ease-in-out;
+
+	.trading-hours-copy {
+		position: relative;
+
+		.close {
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: $dark-black;
+			line-height: 1.5rem;
+			width: 1.5rem;
+			text-align: center;
+			color: white;
+		}
+
+		h3 {
+			padding: 2rem 2rem 0 2rem;
+			color: white;
+		}
+
+		.opening-times-table {
+			padding: 0 2rem 2rem 2rem;
+
+			td {
+				padding: 0.5rem 1rem 0 0;
+			}
+		}
+
+		p {
+			padding: 0 2rem 1rem 2rem;
+			color: white;
+		}
+	}
+
+}
+
+.trading-hours-popup.open {
+	left: 0;
+}
+
+/* Logo */
+.logo-container {
+	text-align: center;
+
+	img {
+		vertical-align: middle;
+		max-width: 200px;
+	}
+}
+
+/* Hamburger Menu */
+#hamburger-menu {
+	width: 30px;
+	height: 25px;
+	position: relative;
+	right: 0;
+	float: right;
+	margin: 0;
+	transform: rotate(0deg);
+	transition: .15s ease-in-out;
+	cursor: pointer;
+}
+
+#hamburger-menu span {
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: #f9f9f9;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: .15s ease-in-out;
+}
+#hamburger-menu span:nth-child(1) {
+	top: 0px;
+	width: 80%;
+	right: 0;
+	left: 20%;
+}
+#hamburger-menu span:nth-child(2), #hamburger-menu span:nth-child(3) {
+	top: 9px;
+}
+#hamburger-menu span:nth-child(4) {
+	top: 18px;
+}
+#hamburger-menu.open span:nth-child(1) {
+	top: 9px;
+	width: 0%;
+	left: 50%;
+}
+#hamburger-menu.open span:nth-child(2) {
+	transform: rotate(45deg);
+}
+#hamburger-menu.open span:nth-child(3) {
+	transform: rotate(-45deg);
+}
+#hamburger-menu.open span:nth-child(4) {
+	top: 9px;
+	width: 0%;
+	left: 50%;
+}
+
+/* Main Navigation */
+.main-navigation {
+	position: absolute;
+	display: none; /*TEMP*/
 }
