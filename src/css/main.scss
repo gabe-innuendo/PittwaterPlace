@@ -492,6 +492,7 @@ a {
 .main-footer {
 	background-color: $off-white;
 	text-align: center;
+	box-shadow: 0px 500px 0px 500px $black;
 
 	section {
 		padding: 1rem;
@@ -507,6 +508,7 @@ a {
 
 	.bottom-links {
 		background-color: $black;
+		display: block;
 
 		.small-links {
 			ul {
@@ -588,7 +590,7 @@ a {
 }
 
 /* 
-	4. Footer styles
+	5. Sidebar styles
 */
 
 .main-sidebar {

@@ -470,6 +470,8 @@ a:hover {
 .main-footer {
   background-color: #f1f2f2;
   text-align: center;
+  -webkit-box-shadow: 0px 500px 0px 500px #252525;
+          box-shadow: 0px 500px 0px 500px #252525;
 }
 
 .main-footer section {
@@ -483,6 +485,7 @@ a:hover {
 
 .main-footer .bottom-links {
   background-color: #252525;
+  display: block;
 }
 
 .main-footer .bottom-links .small-links ul {
@@ -550,7 +553,7 @@ a:hover {
 }
 
 /* 
-	4. Footer styles
+	5. Sidebar styles
 */
 .main-sidebar {
   padding: 1rem;
