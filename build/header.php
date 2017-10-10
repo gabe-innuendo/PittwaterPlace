@@ -26,7 +26,7 @@
         <!-- Main Header -->
         <header class="main-header">
             <div class="flexGridRow">
-                <div class="cell cell--oneQuarter">
+                <div class="cell cell--oneQuarter cell-header-opening-hours">
                     <div class="clock-icon">
                         <span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
                     </div>
@@ -71,12 +71,12 @@
                         </article>
                     </aside>
                 </div>
-                <div class="cell cell--half">
+                <div class="cell cell--half cell-header-logo">
                     <div class="logo-container">
                         <img src="images/logos/logo-white.svg" alt="Pittwater Place Logo" />
                     </div>
                 </div>
-                <div class="cell cell--oneQuarter">
+                <div class="cell cell--oneQuarter cell-header-navigation">
                     <div id="hamburger-menu">
                         <span></span>
                         <span></span>
@@ -102,12 +102,3 @@
             </div><!-- end flexgridrow -->
         </header>
         <!-- End Main Header -->
-
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-    </body>
-</html>

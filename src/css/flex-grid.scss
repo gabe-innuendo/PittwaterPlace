@@ -113,6 +113,11 @@ Flex Grid Cell
 	align-self: center;
 }
 
+@media screen and (max-width: 55em) {
+	.cell--twoThirds, .cell--oneThird {
+		flex: 0 0 100%;
+	}
+}
 
 /* 
 

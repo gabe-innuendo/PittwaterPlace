@@ -146,6 +146,14 @@ Flex Grid Cell
       align-self: center;
 }
 
+@media screen and (max-width: 55em) {
+  .cell--twoThirds, .cell--oneThird {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
 /* 
 
 Grid with Gutters 
