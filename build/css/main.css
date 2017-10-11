@@ -27,6 +27,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   color: #252525;
+  overflow-x: hidden;
 }
 
 .flexGridRow {
@@ -90,6 +91,13 @@ p {
   font-weight: 300;
   line-height: 1.4rem;
   margin-bottom: 1rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 50em) {
+  h1 {
+    font-size: 3em;
+  }
 }
 
 /* Buttons and Links */
@@ -162,6 +170,7 @@ a:hover {
   border-right: none;
   -webkit-transition: left 0.3s ease-in-out;
   transition: left 0.3s ease-in-out;
+  z-index: 20;
 }
 
 .trading-hours-popup .trading-hours-copy {
@@ -300,6 +309,7 @@ a:hover {
   visibility: hidden;
   -webkit-transition: 0.15s ease-in-out all;
   transition: 0.15s ease-in-out all;
+  z-index: 20;
 }
 
 .main-navigation ul {
@@ -475,7 +485,7 @@ a:hover {
 }
 
 .main-footer section {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .main-footer .contact-details span {
@@ -556,7 +566,7 @@ a:hover {
 	5. Sidebar styles
 */
 .main-sidebar {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .main-sidebar .sidebar-news-stories-container ul {
@@ -626,4 +636,144 @@ a:hover {
 
 .main-sidebar .email-signup-container .email-signup-form .email-input-container input[type=email]:focus {
   outline: none;
+}
+
+/* Google maps sidebar */
+.google-maps-sidebar {
+  text-align: center;
+}
+
+.google-maps-sidebar #map {
+  height: 300px;
+}
+
+.google-maps-sidebar .google-maps-direction-form {
+  position: relative;
+  line-height: 2rem;
+  padding: 1rem;
+}
+
+.google-maps-sidebar .google-maps-direction-form input[type=text] {
+  border: 1px solid #f1f2f2;
+  padding: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #252525;
+  min-width: 50%;
+}
+
+.google-maps-sidebar .google-maps-direction-form input[type=text]::-webkit-input-placeholder {
+  color: #a5a8aa;
+  font-weight: 300;
+}
+
+.google-maps-sidebar .google-maps-direction-form input[type=text]:-ms-input-placeholder {
+  color: #a5a8aa;
+  font-weight: 300;
+}
+
+.google-maps-sidebar .google-maps-direction-form input[type=text]::-ms-input-placeholder {
+  color: #a5a8aa;
+  font-weight: 300;
+}
+
+.google-maps-sidebar .google-maps-direction-form input[type=text]::placeholder {
+  color: #a5a8aa;
+  font-weight: 300;
+}
+
+.google-maps-sidebar .google-maps-direction-form input[type=text]:focus {
+  outline: none;
+  border: 1px solid #252525;
+}
+
+/* Media Queries */
+@media screen and (min-width: 50em) {
+  .main-sidebar {
+    padding: 3rem 3rem 3rem 1rem;
+  }
+  .main-sidebar .email-signup-container .email-signup-form .email-input-container {
+    width: 95%;
+  }
+  .main-sidebar .email-signup-container .email-signup-form .email-input-container input[type=email] {
+    width: 70%;
+  }
+  .google-maps-sidebar {
+    text-align: left;
+    padding: 3rem 3rem 3rem 1rem;
+  }
+}
+
+/*
+
+8. Single styles
+
+*/
+.single-article {
+  padding: 1rem;
+}
+
+.single-article .featured-image-container {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.single-article .featured-image-container img {
+  max-width: 100%;
+  height: auto;
+  border: solid 10px #252525;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Media Queries */
+@media screen and (min-width: 50em) {
+  .single-article {
+    padding: 3rem;
+  }
+}
+
+/*
+
+9. Page styles
+
+*/
+.page-featured-background-image-container {
+  height: 150px;
+  background-size: cover;
+  background-repeat: none;
+  background-position: center center;
+  position: relative;
+}
+
+.page-featured-background-image-container .page-heading-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 38, 38, 0)), to(rgba(37, 38, 38, 0.5)));
+  background: linear-gradient(rgba(37, 38, 38, 0), rgba(37, 38, 38, 0.5));
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.page-featured-background-image-container .page-heading-container h1 {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding-left: 1rem;
+}
+
+.page-content {
+  padding: 1rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 50em) {
+  .page-featured-background-image-container {
+    height: 250px;
+  }
+  .page-featured-background-image-container .page-heading-container h1 {
+    padding-left: 3rem;
+  }
+  .page-content {
+    padding: 3rem;
+  }
 }
