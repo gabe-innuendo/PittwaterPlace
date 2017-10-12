@@ -15,7 +15,7 @@
                     <div class="slide-text">
                         <h2>Seasonal Cooking Demonstrations</h2>
                         <p>Some expert chefs will be at Pittwater place this weekend October 20 giving cooking demonstrations.</p>
-                        <a href="#" class="link-button">Book your place</a>
+                        <a href="single.php" class="link-button">Book your place</a>
                     </div>
                 </div>
             </li>
@@ -24,7 +24,7 @@
     <section class="front-page-main-boxes">
         <div class="flexGridRow flexGridRow--wrap">
             <div class="cell cell--third">
-                <a href="">
+                <a href="#">
                     <div class="main-box" style="background-image: url(images/temp_images/main_boxes/fruit.jpg)">
                         <div class="main-box-text-container">
                             <h2>Store Finder</h2>
@@ -33,7 +33,7 @@
                 </a>
             </div>
             <div class="cell cell--third">
-                <a href="">
+                <a href="index.php">
                     <div class="main-box" style="background-image: url(images/temp_images/main_boxes/coffe.jpg)">
                         <div class="main-box-text-container">
                             <h2>What's Happening</h2>
@@ -42,7 +42,7 @@
                 </a>
             </div>
             <div class="cell cell--third">
-                <a href="">
+                <a href="page.php">
                     <div class="main-box" style="background-image: url(images/temp_images/main_boxes/whats-on.jpg)">
                         <div class="main-box-text-container">
                             <h2>Open today<br />

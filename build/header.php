@@ -75,7 +75,7 @@
                 </div>
                 <div class="cell cell--half cell-header-logo">
                     <div class="logo-container">
-                        <img src="images/logos/logo-white.svg" alt="Pittwater Place Logo" />
+                        <a href="front-page.php"><img src="images/logos/logo-white.svg" alt="Pittwater Place Logo" /></a>
                     </div>
                 </div>
                 <div class="cell cell--oneQuarter cell-header-navigation">
@@ -87,17 +87,17 @@
                     </div>
                     <nav class="main-navigation">
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="front-page.php">Home</a></li>
                             <li><a href="#">Store Directory</a></li>
-                            <li><a href="#">What's on</a></li>
+                            <li><a href="index.php">What's on</a></li>
                             <li>
                                 <a href="#">Information</a>
                                 <ul>
-                                    <li><a href="#">Leasing</a></li>
-                                    <li><a href="#">Trading hours</a></li>
+                                    <li><a href="page.php">Leasing</a></li>
+                                    <li><a href="page.php">Trading hours</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="page.php">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
