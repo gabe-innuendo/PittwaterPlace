@@ -23,7 +23,7 @@
     </main>
     <section class="front-page-main-boxes">
         <div class="flexGridRow flexGridRow--wrap">
-            <div class="cell cell--oneThird">
+            <div class="cell cell--third">
                 <a href="">
                     <div class="main-box" style="background-image: url(images/temp_images/main_boxes/fruit.jpg)">
                         <div class="main-box-text-container">
@@ -32,7 +32,7 @@
                     </div>
                 </a>
             </div>
-            <div class="cell cell--oneThird">
+            <div class="cell cell--third">
                 <a href="">
                     <div class="main-box" style="background-image: url(images/temp_images/main_boxes/coffe.jpg)">
                         <div class="main-box-text-container">
@@ -41,7 +41,7 @@
                     </div>
                 </a>
             </div>
-            <div class="cell cell--oneThird">
+            <div class="cell cell--third">
                 <a href="">
                     <div class="main-box" style="background-image: url(images/temp_images/main_boxes/whats-on.jpg)">
                         <div class="main-box-text-container">

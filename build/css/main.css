@@ -834,6 +834,46 @@ a:hover {
 
 /*
 
+7. Index page styles
+
+*/
+.whats-on-box {
+  margin: 1rem;
+}
+
+.whats-on-box .whats-on-image-container {
+  border: solid 10px #252525;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 200px;
+}
+
+.whats-on-box .whats-on-image-container .whats-on-heading-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 38, 38, 0)), to(rgba(37, 38, 38, 0.8)));
+  background: linear-gradient(rgba(37, 38, 38, 0), rgba(37, 38, 38, 0.8));
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.whats-on-box .whats-on-image-container .whats-on-heading-container h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-size: 1.2em;
+}
+
+.whats-on-box main {
+  padding: 1rem;
+  text-align: center;
+}
+
+/*
+
 8. Single styles
 
 */

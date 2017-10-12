@@ -1,45 +1,90 @@
 <?php require_once('header.php'); ?>
     <main class="main-page-container">
+        <div class="page-featured-background-image-container" style="background-image: url(images/temp_images/whats-on-bg.jpg)">
+            <div class="page-heading-container">
+                <div class="flexGridRow">
+                    <div class="cell">
+                        <h1>What's On</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="flexGridRow flexGridRow--wrap">
-            <div class="cell cell--twoThirds">
-            </div>
-            <!-- Side bar -->
-            <div class="cell cell--oneThird">
-                <aside class="main-sidebar">
-                    <section class="sidebar-news-stories-container">
-                    <h3>What else is on</h3>
-                    <ul>
-                        <li>
-                            <h4><a href="#">Kid’s Aussie Art competition and Exhibition</a></h4>
-                            <h6>12 September 2017</h6>
-                        </li>
-                        <li>
-                            <h4><a href="#">Brick Building Fun these school holidays</a></h4>
-                            <h6>7 July 2017</h6>
-                        </li>
-                        <li>
-                            <h4><a href="#">Free baguette this weekend</a></h4>
-                            <h6>19 May 2017</h6>
-                        </li>
-                        <li>
-                            <h4><a href="#">Bed, Bath &amp; Table Clearance</a></h4>
-                            <h6>19 April 2017</h6>
-                        </li>
-                    </ul>
-                    </section>
-                    <section class="email-signup-container">
-                        <h4>Keep up to date with Pittwater Place - Sign up to our newsletter</h4>
-                        <form class="email-signup-form">
-                            <div class="email-input-container">
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <input type="email" name="email" id="email" placeholder="Enter your email" />
+            <div class="cell cell--third off-white-bg">
+                <article class="whats-on-box">
+                    <a href="#">
+                        <header class="whats-on-image-container" style="background-image: url(images/temp_images/whats_on/3.jpg)">
+                            <div class="whats-on-heading-container">
+                                <h3>Seasonal Cooking Demonstration</h3>
                             </div>
-                            <input type="submit" value="Subscribe" />
-                        </form>
-                    </section>
-                </aside>
+                        </header>
+                    </a>
+                    <main>
+                        <p>Learn from the masters of fine cusine at our Seasonal Cooking Demonstrations this month.</p>
+                        <a href="" class="link-button">Find out more</a>
+                    </main>
+                </article>
             </div>
-            <!--  end sidebar -->
+            <div class="cell cell--third off-white-bg">
+                <article class="whats-on-box">
+                    <a href="#">
+                        <header class="whats-on-image-container" style="background-image: url(images/temp_images/whats_on/2.jpg)">
+                            <div class="whats-on-heading-container">
+                                <h3>KID’S AUSSIE ART COMPETITION &amp; EXHIBITION</h3>
+                            </div>
+                        </header>
+                    </a>
+                    <main>
+                        <p>Pittwater Place encourages kids between 2-12 to enter our aussie art competition.</p>
+                        <a href="" class="link-button">Find out more</a>
+                    </main>
+                </article>
+            </div>
+            <div class="cell cell--third">
+                <article class="whats-on-box">
+                    <a href="#">
+                        <header class="whats-on-image-container" style="background-image: url(images/temp_images/whats_on/1.jpg)">
+                            <div class="whats-on-heading-container">
+                                <h3>BRICK BUILDING FUN THESE HOLIDAYS!</h3>
+                            </div>
+                        </header>
+                    </a>
+                    <main>
+                        <p>Little Builders is bringing mountains of lego fun to Pittwater Place these holidays!</p>
+                        <a href="" class="link-button">Find out more</a>
+                    </main>
+                </article>
+            </div>
+            <div class="cell cell--third">
+                <article class="whats-on-box">
+                    <a href="#">
+                        <header class="whats-on-image-container" style="background-image: url(images/temp_images/whats_on/5.jpg)">
+                            <div class="whats-on-heading-container">
+                                <h3>FREE BAGUETTE THIS WEEKEND</h3>
+                            </div>
+                        </header>
+                    </a>
+                    <main>
+                        <p>Baker’s Delight is offering a free baguette to limited customers this weekend. Get in quick!</p>
+                        <a href="" class="link-button">Find out more</a>
+                    </main>
+                </article>
+            </div>
+            <div class="cell cell--third">
+                <article class="whats-on-box">
+                    <a href="#">
+                        <header class="whats-on-image-container" style="background-image: url(images/temp_images/whats_on/4.jpg)">
+                            <div class="whats-on-heading-container">
+                                <h3>Bed, Bath &amp; Table Clearance</h3>
+                            </div>
+                        </header>
+                    </a>
+                    <main>
+                        <p>Up to 50% off sale items during Bed, Bath & Table’s big clearance sale this week.</p>
+                        <a href="" class="link-button">Find out more</a>
+                    </main>
+                </article>
+            </div>
         </div>    
     </main>
 <?php require_once('footer.php'); ?>
