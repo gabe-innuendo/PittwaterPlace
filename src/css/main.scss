@@ -31,8 +31,9 @@ $red: #bf1c31;
 
 /* Theme specific variables */
 $image-border: solid 10px $black;
-$gradient-bottom: linear-gradient(rgba(37,38,38,0), rgba(37,38,38,0.5));
+$gradient-bottom: linear-gradient(rgba(37,38,38,0), rgba(37,38,38,0.8));
 $gradient-top: linear-gradient(rgba(37,38,38,0.5), rgba(37,38,38,0));
+$gradient-middle: linear-gradient(rgba(37,38,38,0), rgba(37,38,38,0.8), rgba(37,38,38,0.8), rgba(37,38,38,0));
 
 /* 
 	2. Site-wide styles
@@ -109,6 +110,14 @@ p {
 	font-weight: 300;
 	line-height: 1.4rem;
 	margin-bottom: 1rem;
+}
+
+.thin-text {
+	font-weight: 300;
+}
+
+.thick-text {
+	font-weight: 700;
 }
 
 /* Media Queries */
@@ -726,6 +735,129 @@ a {
 		padding: 3rem 3rem 3rem 1rem;
 	}
 }
+
+/* 
+
+6. Front page styles
+
+*/
+
+.front-page-slider-area {
+	width: 100%;
+	z-index: 1;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		.slide-container {
+			width: 100%;
+			height: 50vh;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			position: relative;
+
+			.slide-text-container {
+				background: $gradient-middle;
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				display: flex;
+				align-items: center;
+
+				.slide-text {
+					flex: 1 1 auto;
+					padding: 1rem;
+					text-align: center;
+
+					h2, p {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
+
+.unslider-nav {
+	position: relative;
+	top: -2rem;
+	height: 0;
+	z-index: 2;
+}
+
+.front-page-main-boxes {
+
+	margin: 1rem 1rem 2rem 1rem;
+
+	.main-box {
+		border: $image-border;
+		height: 250px;
+		background-size: cover;
+		background-position: top center;
+		position: relative;
+		margin: 1rem 1rem 0 1rem;
+		transition: border 0.15s ease-in-out;
+		box-sizing: border-box;
+
+		.main-box-text-container {
+			position: absolute;
+			background: $gradient-bottom;
+			width: 100%;
+			height: 100%;
+
+			h2 {
+				color: white;
+				text-decoration: none;
+				position: absolute;
+				bottom: 0;
+				left: 1rem;
+			}
+		}
+	
+	}
+
+	a:hover {
+		.main-box {
+			border: 15px solid $black;
+		}
+	}
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 50em) {
+	.front-page-slider-area {
+		ul {
+			.slide-container {
+				max-height: 60vh;
+				min-height: 300px;
+
+				.slide-text-container {
+					background: $gradient-bottom;
+					align-items: flex-end;
+
+					.slide-text {
+						text-align: left;
+						max-width: 60%;
+						padding: 2rem;
+
+						h2 {
+							font-size: 3rem;
+						}
+
+						p {
+							max-width: 70%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 
 /*
 

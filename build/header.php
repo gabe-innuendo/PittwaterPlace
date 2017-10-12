@@ -16,6 +16,8 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/flex-grid.min.css">
+        <link rel="stylesheet" href="css/unslider.css">
+        <link rel="stylesheet" href="css/unslider-dots.css">
         <link rel="stylesheet" href="css/main.min.css">
     </head>
     <body>

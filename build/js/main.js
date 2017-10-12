@@ -8,35 +8,50 @@
 
 */
 
-/*
-	1. Mobile Header
-*/
+$(document).ready(function(){
+	
+	/*
+		1. Mobile Header
+	*/
 
-// a) Navigation
+	// a) Navigation
 
-// Hamburger menu toggle
+	// Hamburger menu toggle
 
-$('#hamburger-menu').click(function(){
-	$(this).toggleClass('open');
-	$('.main-navigation').toggleClass('active');
-})
+	$('#hamburger-menu').click(function(){
+		$(this).toggleClass('open');
+		$('.main-navigation').toggleClass('active');
+	})
 
-// Menu view toggle
+	// Menu view toggle
 
-// Sub Menu indicator
-$(".main-navigation > ul > li:has(ul)").addClass("has-sub-menu");
-$(".has-sub-menu > a").append("<i class='fa fa-caret-down inline-icon' aria-hidden='true'></i>");
+	// Sub Menu indicator
+	$(".main-navigation > ul > li:has(ul)").addClass("has-sub-menu");
+	$(".has-sub-menu > a").append("<i class='fa fa-caret-down inline-icon' aria-hidden='true'></i>");
 
-// Mobile submenu toggle
-$(".main-navigation .has-sub-menu").click(function(){
-	$(this).find("ul").toggleClass("active");
-})
+	// Mobile submenu toggle
+	$(".main-navigation .has-sub-menu").click(function(){
+		$(this).find("ul").toggleClass("active");
+	})
 
-// b) Opening hours toggle
-$('.clock-icon').click(function(){
-	$('.trading-hours-popup').toggleClass('open');
-})
+	// b) Opening hours toggle
+	$('.clock-icon').click(function(){
+		$('.trading-hours-popup').toggleClass('open');
+	})
 
-$('.trading-hours-popup .close').click(function(){
-	$('.trading-hours-popup').removeClass('open');
-})
+	$('.trading-hours-popup .close').click(function(){
+		$('.trading-hours-popup').removeClass('open');
+	})
+
+	/*
+		2. Unslider
+	*/
+	$('.front-page-slider-area').unslider({
+		autoplay: true,
+		delay: 7000,
+		arrows: false,
+		nav: true
+	});
+
+
+});

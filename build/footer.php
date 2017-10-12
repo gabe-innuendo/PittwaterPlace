@@ -46,9 +46,9 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="js/vendor/unslider-min.js"></script>
         <script src="js/main.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVahm6Dzg99t79AXctCbs-0t1k91XXGxI&libraries=places&callback=initMap" async defer></script>
-        <script src="js/googlemaps.js"></script>
+        
 
     </body>
 </html>

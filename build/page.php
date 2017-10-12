@@ -31,32 +31,7 @@
                     <p>Your registration is captured again upon exiting. If you are under 3 hours, the gate will automatically open. If you are over 3 hours, the screen will display any applicable fee payable. Payment can be made via credit or debit card at the exit gate.</p>
                 </main>
             </div>
-            <!-- Sidebar -->
-            <div class="cell cell--oneThird">
-                <aside class="google-maps-sidebar">
-                    <div id="map"></div>
-                    <form class="google-maps-direction-form">
-                        <label for="origin-input">Get directions from:</label><br />
-                        <input id="origin-input" class="controls" type="text">
-                    
-                        <div id="mode-selector" class="controls">
-                            <div class="input-wrapper">
-                              <input type="radio" name="type" id="changemode-walking" checked="checked">
-                              <label for="changemode-walking">Walking</label>
-                            </div>
-                            <div class="input-wrapper">
-                              <input type="radio" name="type" id="changemode-transit">
-                              <label for="changemode-transit">Public transport</label>
-                            </div>
-                            <div class="input-wrapper">
-                              <input type="radio" name="type" id="changemode-driving">
-                              <label for="changemode-driving">Driving</label>
-                            </div>
-                        </div>
-                    </form>
-                    <div id="directionsPanel"></div>
-                </aside>
-            </div>
+            <?php require_once('googlemaps-sidebar.php'); ?>
         </div>    
     </main>
 <?php require_once('footer.php'); ?>
